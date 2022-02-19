@@ -3,8 +3,8 @@
         <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
     {{/if}}
 
-    <div class="cover-content container">
-        {{#if @site.description}}
+    {{#if @site.description}}
+        <div class="cover-content container">
             <div class="cover-description">
                 {{#if @custom.email_signup_text}}
                     {{@custom.email_signup_text}}
@@ -12,8 +12,8 @@
                     {{@site.description}}
                 {{/if}}
             </div>
-        {{/if}}
-    </div>
+        </div>
+    {{/if}}
 
     <button class="button-icon cover-arrow">
         {{> icons/chevron-right}}
